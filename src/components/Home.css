@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  height: 100vh;
+}
+
+#about {
+  height: 100vh;
+}
+
+.proficient {
+  border: 2px solid rgb(32, 229, 132);
+  background-color: #4decbc15;
+}
+
+.intermediate {
+  border: 2px solid rgb(216, 216, 17);
+  background-color: #dbdca826;
+}
+
+.beginner {
+  border: 2px solid gray;
+  background-color: #b6bbbb26;
+}
+
+.skew {
+  background-color: rgb(32, 229, 132);
+}
