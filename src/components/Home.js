@@ -31,12 +31,12 @@ function Home() {
     ChangeTitle()
 
     // Strings for typewriter effect
-    const strings = ['software engineering.', 'web development.', 'content creation.', 'full stack development.', 'creating things.', 'design.'];
+    const strings = ['software development.', 'web development.', 'content creation.', 'business.', 'creating things.'];
 
     return (
-        <div className="font-sans antialiased">
-            <section id="home" className='lg:px-32 px-8 pt-40'>
-                <div className="flex lg:flex-row flex-col justify-evenly items-center">
+        <div className="font-sans antialiased relative">
+            <section id="home">
+                <div className="flex lg:flex-row flex-col justify-evenly items-center lg:px-32 px-8 pt-40">
                     <div className="intro-header lg:text-left text-center">
                         <p className="lg:text-3xl md:text-2xl text-xl font-medium">Hi! I am</p>
                         <p className="lg:text-4xl md:text-3xl text-2xl font-bold tracking-wide">ARPAN NEUPANE.</p>
@@ -46,11 +46,10 @@ function Home() {
                         <img src={homeGif} alt='programmer-gif' width="500" />
                     </div>
                 </div>
-
             </section>
 
-            <section id="about" className='lg:px-16 px-6 pt-36'>
-                <div className="flex md:flex-row flex-col justify-between">
+            <section id="about">
+                <div className="flex md:flex-row flex-col justify-between lg:px-16 px-6 pt-36 pb-24">
                     <Fade top cascade>
                         <div className='p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-4'>
                             <p className='about-header md:text-3xl text-2xl mb-2 font-medium'>About Me</p>
@@ -132,8 +131,8 @@ function Home() {
                     </Fade>
                 </div>
             </section>
-
-        </div>
+            <p className="ending-msg font-light text-center p-7 absolute bottom-0 left-0 right-0">Created with ❤️ by Arpan Neupane</p>
+        </div >
     )
 }
 
