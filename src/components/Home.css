@@ -3,11 +3,11 @@ html {
 }
 
 #home {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .proficient {
@@ -25,6 +25,7 @@ html {
   background-color: #b6bbbb26;
 }
 
-.skew {
+.ending-msg {
   background-color: rgb(32, 229, 132);
+  width: 100%;
 }
