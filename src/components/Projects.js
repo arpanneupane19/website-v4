@@ -22,7 +22,7 @@ function Projects() {
                     <div className="flex flex-row flex-wrap justify-center items-center">
                         <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col mx-3 my-3">
                             <p className="text-xl text-center font-light mb-2">Bloggy</p>
-                            <img src={Bloggy} />
+                            <img src={Bloggy} alt="Bloggy" />
                             <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                 <div className="tool p-1 rounded-lg m-1">
                                     <p className="font-light text-center">Python</p>
@@ -37,7 +37,7 @@ function Projects() {
                         </div>
                         <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col mx-3 my-3">
                             <p className="text-xl text-center font-light mb-2">SecuroChat</p>
-                            <img src={SecuroChat} />
+                            <img src={SecuroChat} alt="SecuroChat" />
                             <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                 <div className="tool p-1 rounded-lg m-1">
                                     <p className="font-light text-center">React.js</p>
@@ -52,7 +52,7 @@ function Projects() {
                         </div>
                         <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col mx-3 my-3">
                             <p className="text-xl text-center font-light mb-2">Weather Wizard</p>
-                            <img src={WeatherWizard} />
+                            <img src={WeatherWizard} alt="Weather Wizard" />
                             <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                 <div className="tool p-1 rounded-lg m-1">
                                     <p className="font-light text-center">React.js</p>
@@ -64,7 +64,7 @@ function Projects() {
                         </div>
                         <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col mx-3 my-3">
                             <p className="text-xl text-center font-light mb-2">Todos</p>
-                            <img src={Todos} />
+                            <img src={Todos} alt="Todos" />
                             <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                 <div className="tool p-1 rounded-lg m-1">
                                     <p className="font-light text-center">Python</p>
@@ -79,7 +79,7 @@ function Projects() {
                         </div>
                         <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col mx-3 my-3">
                             <p className="text-xl text-center font-light mb-2">This Website</p>
-                            <img src={Website} />
+                            <img src={Website} alt="Website" />
                             <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                 <div className="tool p-1 rounded-lg m-1">
                                     <p className="font-light text-center">React.js</p>
@@ -91,7 +91,7 @@ function Projects() {
                         </div>
                         <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col mx-3 my-3">
                             <p className="text-xl text-center font-light mb-2">YouTube Clone</p>
-                            <img src={YTClone} />
+                            <img src={YTClone} alt="YouTube Clone" />
                             <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                 <div className="tool p-1 rounded-lg m-1">
                                     <p className="font-light text-center">React.js</p>
