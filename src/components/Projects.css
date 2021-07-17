@@ -1,0 +1,19 @@
+.projects {
+  height: 100vh;
+}
+
+.project {
+  border: 1px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.project > img {
+  width: 270px;
+  object-fit: contain;
+}
+
+.tool {
+  border: 2px solid rgb(32, 229, 132);
+  background-color: #4decbc15;
+}
