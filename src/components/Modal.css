@@ -1,0 +1,14 @@
+.modal {
+  box-shadow: -2px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 500;
+  background-color: white;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.2s;
+}
+
+.project-info > p > a {
+  color: #3b82f6;
+}
