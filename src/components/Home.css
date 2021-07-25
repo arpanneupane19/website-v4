@@ -10,6 +10,10 @@ html {
   min-height: 100vh;
 }
 
+.about-info > a {
+  color: #3b82f6;
+}
+
 .proficient {
   border: 2px solid rgb(32, 229, 132);
   background-color: #4decbc15;
