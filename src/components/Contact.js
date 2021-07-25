@@ -15,25 +15,25 @@ function Contact() {
                     <p className="contact-header md:text-3xl text-2xl mb-4 font-medium">Contact Me</p>
                     <div className="contact-links flex flex-row text-center">
                         <Tooltip title="Email">
-                            <div className="contact-item email my-2 mx-2 md:text-3xl text-2xl">
+                            <div className="contact-item email my-2 mx-2 text-3xl">
                                 <a href="mailto:arpanneupane19@gmail.com" target="__blank"><AiFillMail /></a>
                             </div>
                         </Tooltip>
 
                         <Tooltip title="GitHub">
-                            <div className="contact-item github my-2 mx-2 md:text-3xl text-2xl">
+                            <div className="contact-item github my-2 mx-2 text-3xl">
                                 <a href="https://github.com/arpanneupane19" target='__blank'><AiFillGithub /></a>
                             </div>
                         </Tooltip>
 
                         <Tooltip title="YouTube">
-                            <div className="contact-item youtube my-2 mx-2 md:text-3xl text-2xl">
+                            <div className="contact-item youtube my-2 mx-2 text-3xl">
                                 <a href="https://youtube.com/ArpanNeupaneProductions" target="__blank"><AiFillYoutube /></a>
                             </div>
                         </Tooltip>
 
                         <Tooltip title="Twitter">
-                            <div className="contact-item twitter my-2 mx-2 md:text-3xl text-2xl">
+                            <div className="contact-item twitter my-2 mx-2 text-3xl">
                                 <a href="https://twitter.com/arpanneupane07" target="__blank"><AiFillTwitterCircle /></a>
                             </div>
                         </Tooltip>
