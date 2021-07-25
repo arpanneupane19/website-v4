@@ -57,7 +57,7 @@ function Home() {
                         <div className='p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-4'>
                             <p className='about-header md:text-3xl text-2xl mb-2 font-medium'>About Me</p>
                             <p className='about-info md:text-lg text-base tracking-wider leading-relaxed'>Hello there! My name is Arpan Neupane and I am a 13 year old programmer. I enjoy creating apps and websites that can help people, make life easier, and make it fun. </p><br></br>
-                            <p className='about-info md:text-lg text-base tracking-wider leading-relaxed'>In my free time, I also create content surrounding technology and programming. I make tutorials, best practices, and also give advice on how to use tools better.</p>
+                            <p className='about-info md:text-lg text-base tracking-wider leading-relaxed'>In my free time, I also create content surrounding technology and programming. I make tutorials, best practices, and also give advice on how to use tools better. I'm also a contributor at <a href="https://themorningnews.com" target="__blank">TheMorningNews</a>.</p>
                         </div>
                     </Fade>
                     <Fade top cascade>
@@ -138,7 +138,7 @@ function Home() {
                 <p>Created with ❤️ by Arpan Neupane.</p>
                 <p>© 2021 Arpan Neupane. All rights reserved.</p>
             </div>
-        </div>
+        </div >
     )
 }
 
