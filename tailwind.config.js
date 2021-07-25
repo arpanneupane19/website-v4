@@ -13,10 +13,6 @@ module.exports = {
       'nav-link-dark': "#f3f3f3",
       'nav-link-dark-hover': "#f1f1f1"
     },
-    backgroundColor: theme => theme('colors'),
-    backgroundColor: {
-      'green': '#20e584'
-    }
   },
   variants: {
     extend: {},
