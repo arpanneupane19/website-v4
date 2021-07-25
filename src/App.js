@@ -6,38 +6,41 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import PageNotFound from './components/PageNotFound'
 import ScrollToTop from './components/ScrollToTop'
+import HttpsRedirect from 'react-https-redirect'
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Switch>
-        <Route exact path={["/home", "/"]}>
-          <Navbar
-            brandLink={"a"}
-          />
-          <Home />
-        </Route>
-        <Route exact path="/projects">
-          <Navbar
-            brandLink={"link"}
-          />
-          <Projects />
-        </Route>
-        <Route exact path="/contact">
-          <Navbar
-            brandLink={"link"}
-          />
-          <Contact />
-        </Route>
-        <Route path="*">
-          <Navbar
-            brandLink={"link"}
-          />
-          <PageNotFound />
-        </Route>
-      </Switch>
-    </Router>
+    <HttpsRedirect>
+      <Router>
+        <ScrollToTop />
+        <Switch>
+          <Route exact path={["/home", "/"]}>
+            <Navbar
+              brandLink={"a"}
+            />
+            <Home />
+          </Route>
+          <Route exact path="/projects">
+            <Navbar
+              brandLink={"link"}
+            />
+            <Projects />
+          </Route>
+          <Route exact path="/contact">
+            <Navbar
+              brandLink={"link"}
+            />
+            <Contact />
+          </Route>
+          <Route path="*">
+            <Navbar
+              brandLink={"link"}
+            />
+            <PageNotFound />
+          </Route>
+        </Switch>
+      </Router>
+    </HttpsRedirect>
   )
 }
 
