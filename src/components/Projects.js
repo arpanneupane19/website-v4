@@ -44,7 +44,7 @@ function Projects() {
             <div className="projects">
                 <div className="flex flex-col justify-center items-center pt-36 pb-24 lg:px-16 px-6">
                     <Bounce bottom cascade>
-                        <p className="projects-header md:text-3xl text-2xl mb-4">Projects</p>
+                        <p className="projects-header md:text-3xl text-2xl mb-4 font-medium">Projects</p>
                         <div className="flex flex-row flex-wrap justify-center items-center">
                             <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3" onClick={() => setShowBloggy(true)}>
                                 <p className="text-xl text-center font-light mb-2">Bloggy</p>
