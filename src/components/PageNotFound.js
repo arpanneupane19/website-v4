@@ -15,4 +15,4 @@ function PageNotFound() {
     )
 }
 
-export default NotFoundPage
+export default PageNotFound
