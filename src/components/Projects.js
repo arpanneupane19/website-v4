@@ -39,7 +39,7 @@ function Projects() {
     const closeYT = () => setShowYT(false);
 
     return (
-        <div className="font-sans antialiased">
+        <div className="font-sans antialiased bg-white">
             {showBloggy || showSecuroChat || showWeather || showTodos || showSite || showYT ? <div onClick={() => setShowBloggy(false) || setShowSecuroChat(false) || setShowWeather(false) || setShowTodos(false) || setShowSite(false) || setShowYT(false)} className='backdrop'></div> : null}
             <div className="projects">
                 <div className="flex flex-col justify-center items-center pt-36 pb-24 lg:px-16 px-6">

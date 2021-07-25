@@ -9,7 +9,7 @@ function Contact() {
     ChangeTitle()
 
     return (
-        <div className="font-sans antialiased">
+        <div className="font-sans antialiased bg-white">
             <div className="projects">
                 <div className="flex flex-col justify-center items-center pt-36 pb-24 lg:px-16 px-6">
                     <p className="contact-header md:text-3xl text-2xl mb-4 font-medium">Contact Me</p>

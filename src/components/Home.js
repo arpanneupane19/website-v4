@@ -35,7 +35,7 @@ function Home() {
     const strings = ['software development.', 'web development.', 'content creation.', 'business.', 'creating things.'];
 
     return (
-        <div className="font-sans antialiased relative">
+        <div className="font-sans antialiased relative bg-white">
             <section id="home">
                 <div className="flex lg:flex-row flex-col justify-evenly items-center lg:px-32 px-8 pt-40">
                     <Bounce left cascade>

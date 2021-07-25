@@ -4,7 +4,7 @@ import './Modal.css'
 
 export function BloggyModal({ showModal, closeModal }) {
     return (
-        <div className="modal lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
+        <div className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
             visibility: showModal ? 'visible' : 'hidden',
             opacity: showModal ? 1 : 0
         }}>
@@ -31,7 +31,7 @@ export function BloggyModal({ showModal, closeModal }) {
 
 export function SecuroChatModal({ showModal, closeModal }) {
     return (
-        <div className="modal lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
+        <div className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
             visibility: showModal ? 'visible' : 'hidden',
             opacity: showModal ? 1 : 0
         }}>
@@ -57,7 +57,7 @@ export function SecuroChatModal({ showModal, closeModal }) {
 
 export function WeatherWizModal({ showModal, closeModal }) {
     return (
-        <div className="modal lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
+        <div className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
             visibility: showModal ? 'visible' : 'hidden',
             opacity: showModal ? 1 : 0
         }}>
@@ -84,7 +84,7 @@ export function WeatherWizModal({ showModal, closeModal }) {
 
 export function TodosModal({ showModal, closeModal }) {
     return (
-        <div className="modal lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
+        <div className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
             visibility: showModal ? 'visible' : 'hidden',
             opacity: showModal ? 1 : 0
         }}>
@@ -109,7 +109,7 @@ export function TodosModal({ showModal, closeModal }) {
 
 export function SiteModal({ showModal, closeModal }) {
     return (
-        <div className="modal lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
+        <div className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
             visibility: showModal ? 'visible' : 'hidden',
             opacity: showModal ? 1 : 0
         }}>
@@ -134,7 +134,7 @@ export function SiteModal({ showModal, closeModal }) {
 
 export function YTModal({ showModal, closeModal }) {
     return (
-        <div className="modal lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
+        <div className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4" style={{
             visibility: showModal ? 'visible' : 'hidden',
             opacity: showModal ? 1 : 0
         }}>
