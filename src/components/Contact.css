@@ -1,0 +1,33 @@
+.contact-item {
+  color: black;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.contact-item:hover {
+  transition: 0.2s;
+}
+
+.email:hover {
+  background: #d44638;
+  color: white;
+  border: 1px solid #d44638;
+}
+
+.github:hover {
+  background: #211f1f;
+  color: white;
+  border: 1px solid #211f1f;
+}
+.youtube:hover {
+  background: #ff0000;
+  color: white;
+  border: 1px solid #ff0000;
+}
+
+.twitter:hover {
+  background: #1da1f2;
+  color: white;
+  border: 1px solid #1da1f2;
+}
