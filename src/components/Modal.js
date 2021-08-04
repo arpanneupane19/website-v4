@@ -68,13 +68,13 @@ export function WeatherWizModal({ showModal, closeModal }) {
                 </div>
                 <div className="project-info">
                     <p className="font-light text-sm tracking-wide">Weather Wizard is a weather app created
-                        using <a href="https://reactjs.org" target="__blank">React</a> for the frontend.
+                        using <a href="https://reactjs.org" target="__blank">React</a> for the web version and <a href="https://reactnative.dev" target="__blank">React Native</a> for the mobile version.
                         It uses the <a href="https://openweathermap.org/api" target="__blank">OpenWeatherMap API</a> to retrieve weather data.
-                        In addition, the background image of the app changes depending on the temperature.
                         <br></br><br></br>
-                        You can enter in any city and the app will instantly return the weather data for that city. The data includes
-                        the current weather, temperatures (min-temp, max-temp, and current temp), and the current date. Check out the
-                        app <a href="https://weatherwiz.herokuapp.com" target="__blank">here</a>!
+                        You can enter in any city and the app will instantly return the weather data for that city.
+                        There's also a Recents page where you can view recent searches.
+                        Check out the web version <a href="https://weatherwiz.herokuapp.com" target="__blank">here</a> and the mobile version <a href="https://expo.dev/@arpanneupane/weather-wizard">here</a>!
+                        The git repository for the <a href='https://github.com/arpanneupane19/Weather-Wizard-Web' target="__blank">web app</a> and the git repository for the <a href="https://github.com/arpanneupane19/Weather-Wizard-Mobile" target="__blank">mobile app</a>.
                     </p>
                 </div>
             </div>
