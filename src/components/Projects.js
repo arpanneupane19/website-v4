@@ -45,7 +45,7 @@ function Projects() {
                 <div className="flex flex-col justify-center items-center pt-36 pb-24 lg:px-16 px-6">
                     <Bounce bottom cascade>
                         <p className="projects-header md:text-3xl text-2xl mb-4 font-medium">Projects</p>
-                        <div className="flex flex-row flex-wrap justify-center items-center">
+                        <div className="grid md:grid-cols-2 grid-cols-1">
                             <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3" onClick={() => setShowBloggy(true)}>
                                 <p className="text-xl text-center font-light mb-2">Bloggy</p>
                                 <img src={Bloggy} alt="Bloggy" />
@@ -66,10 +66,10 @@ function Projects() {
                                 <img src={SecuroChat} alt="SecuroChat" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                     <div className="tool p-1 rounded-lg m-1">
-                                        <p className="font-light text-center">React.js</p>
+                                        <p className="font-light text-center">React</p>
                                     </div>
                                     <div className="tool p-1 rounded-lg m-1">
-                                        <p className="font-light text-center">Node.js</p>
+                                        <p className="font-light text-center">Node</p>
                                     </div>
                                     <div className="tool p-1 rounded-lg m-1">
                                         <p className="font-light text-center">Socket.io</p>
@@ -81,10 +81,13 @@ function Projects() {
                                 <img src={WeatherWizard} alt="Weather Wizard" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                     <div className="tool p-1 rounded-lg m-1">
-                                        <p className="font-light text-center">React.js</p>
+                                        <p className="font-light text-center">React</p>
                                     </div>
                                     <div className="tool p-1 rounded-lg m-1">
-                                        <p className="font-light text-center">OpenWeatherMap API</p>
+                                        <p className="font-light text-center">React Native</p>
+                                    </div>
+                                    <div className="tool p-1 rounded-lg m-1">
+                                        <p className="font-light text-center">Expo</p>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +111,7 @@ function Projects() {
                                 <img src={Website} alt="Website" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                     <div className="tool p-1 rounded-lg m-1">
-                                        <p className="font-light text-center">React.js</p>
+                                        <p className="font-light text-center">React</p>
                                     </div>
                                     <div className="tool p-1 rounded-lg m-1">
                                         <p className="font-light text-center">Tailwind CSS</p>
@@ -120,7 +123,7 @@ function Projects() {
                                 <img src={YTClone} alt="YouTube Clone" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                                     <div className="tool p-1 rounded-lg m-1">
-                                        <p className="font-light text-center">React.js</p>
+                                        <p className="font-light text-center">React</p>
                                     </div>
                                     <div className="tool p-1 rounded-lg m-1">
                                         <p className="font-light text-center">Firebase</p>
@@ -155,6 +158,7 @@ function Projects() {
                 showModal={showYT}
                 closeModal={closeYT}
             />
+
         </div>
     )
 }
