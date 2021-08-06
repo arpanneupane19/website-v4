@@ -3,12 +3,13 @@ import './Projects.css'
 import { ChangeTitle } from './Home.js'
 import Bounce from 'react-reveal/Bounce'
 import Bloggy from './images/bloggy.png';
+import Chattr from './images/chattr.png';
 import SecuroChat from './images/securochat.png';
 import WeatherWizard from './images/weatherwiz.png';
 import Todos from './images/todos.png';
 import Website from './images/website.png';
 import YTClone from './images/ytclone.png';
-import { BloggyModal, SecuroChatModal, WeatherWizModal, TodosModal, SiteModal, YTModal } from './Modal'
+import { BloggyModal, ChattrModal, SecuroChatModal, WeatherWizModal, TodosModal, SiteModal, YTModal } from './Modal'
 
 function Projects() {
 
@@ -17,6 +18,10 @@ function Projects() {
     // Bloggy hooks
     const [showBloggy, setShowBloggy] = useState(false);
     const closeBloggy = () => setShowBloggy(false);
+
+    // Chattr hooks
+    const [showChattr, setShowChattr] = useState(false);
+    const closeChattr = () => setShowChattr(false);
 
     // SecuroChat hooks
     const [showSecuroChat, setShowSecuroChat] = useState(false);
@@ -40,7 +45,7 @@ function Projects() {
 
     return (
         <div className="font-sans antialiased bg-white">
-            {showBloggy || showSecuroChat || showWeather || showTodos || showSite || showYT ? <div onClick={() => setShowBloggy(false) || setShowSecuroChat(false) || setShowWeather(false) || setShowTodos(false) || setShowSite(false) || setShowYT(false)} className='backdrop'></div> : null}
+            {showBloggy || showChattr || showSecuroChat || showWeather || showTodos || showSite || showYT ? <div onClick={() => setShowBloggy(false) || setShowChattr(false) || setShowSecuroChat(false) || setShowWeather(false) || setShowTodos(false) || setShowSite(false) || setShowYT(false)} className='backdrop'></div> : null}
             <div className="projects">
                 <div className="flex flex-col justify-center items-center pt-36 pb-24 lg:px-16 px-6">
                     <Bounce bottom cascade>
@@ -50,14 +55,29 @@ function Projects() {
                                 <p className="text-xl text-center font-light mb-2">Bloggy</p>
                                 <img src={Bloggy} alt="Bloggy" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Python</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Socket.io</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">PostgreSQL</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3" onClick={() => setShowChattr(true)}>
+                                <p className="text-xl text-center font-light mb-2">Chattr</p>
+                                <img src={Chattr} alt="Chattr" />
+                                <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
+                                    <div className="tool p-1 rounded-lg m-0.5">
+                                        <p className="font-light text-center">Python</p>
+                                    </div>
+                                    <div className="tool p-1 rounded-lg m-0.5">
+                                        <p className="font-light text-center">Socket.io</p>
+                                    </div>
+                                    <div className="tool p-1 rounded-lg m-0.5">
+                                        <p className="font-light text-center">UIkit</p>
                                     </div>
                                 </div>
                             </div>
@@ -65,13 +85,13 @@ function Projects() {
                                 <p className="text-xl text-center font-light mb-2">SecuroChat</p>
                                 <img src={SecuroChat} alt="SecuroChat" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">React</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Node</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Socket.io</p>
                                     </div>
                                 </div>
@@ -80,13 +100,13 @@ function Projects() {
                                 <p className="text-xl text-center font-light mb-2">Weather Wizard</p>
                                 <img src={WeatherWizard} alt="Weather Wizard" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">React</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">React Native</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Expo</p>
                                     </div>
                                 </div>
@@ -95,13 +115,13 @@ function Projects() {
                                 <p className="text-xl text-center font-light mb-2">Todos</p>
                                 <img src={Todos} alt="Todos" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Python</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">HTML/CSS</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">PostgreSQL</p>
                                     </div>
                                 </div>
@@ -110,10 +130,10 @@ function Projects() {
                                 <p className="text-xl text-center font-light mb-2">This Website</p>
                                 <img src={Website} alt="Website" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">React</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Tailwind CSS</p>
                                     </div>
                                 </div>
@@ -122,10 +142,10 @@ function Projects() {
                                 <p className="text-xl text-center font-light mb-2">YouTube Clone</p>
                                 <img src={YTClone} alt="YouTube Clone" />
                                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">React</p>
                                     </div>
-                                    <div className="tool p-1 rounded-lg m-1">
+                                    <div className="tool p-1 rounded-lg m-0.5">
                                         <p className="font-light text-center">Firebase</p>
                                     </div>
                                 </div>
@@ -137,6 +157,10 @@ function Projects() {
             <BloggyModal
                 showModal={showBloggy}
                 closeModal={closeBloggy}
+            />
+            <ChattrModal
+                showModal={showChattr}
+                closeModal={closeChattr}
             />
             <SecuroChatModal
                 showModal={showSecuroChat}
