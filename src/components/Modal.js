@@ -127,6 +127,139 @@ export function ChattrModal({ showModal, closeModal }) {
   );
 }
 
+export function PasswordProtectModal({ showModal, closeModal }) {
+  return (
+    <div
+      className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
+      style={{
+        visibility: showModal ? "visible" : "hidden",
+        opacity: showModal ? 1 : 0,
+      }}
+    >
+      <div className="modal-info flex flex-col">
+        <div className="flex flex-row justify-between items-center mb-4">
+          <h4 className="text-left text-lg font-medium">Password Protect</h4>
+          <p onClick={closeModal} className="cursor-pointer">
+            &times;
+          </p>
+        </div>
+        <div className="project-info">
+          <p className="font-light text-sm tracking-wide">
+            Password Protect is an app I developed for an 8th grade Science
+            project at my middle school. This app was developed using{" "}
+            <a href="https://reactjs.org" target="__blank">
+              React
+            </a>{" "}
+            for the web version and{" "}
+            <a href="https://reactnative.dev" target="__blank">
+              React Native
+            </a>{" "}
+            for the mobile version.
+            <br></br>
+            <br></br>
+            Users can enter in their passwords (which are not saved) and check
+            whether or not they are secure enough to use on the internet.
+            Password strength is checked using{" "}
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp"
+              target="__blank"
+            >
+              RegEx
+            </a>
+            . Check out the git repository{" "}
+            <a
+              href="https://github.com/arpanneupane19/password-protect-web"
+              target="__blank"
+            >
+              here
+            </a>{" "}
+            for the web app and{" "}
+            <a
+              href="https://github.com/arpanneupane19/password-protect-mobile"
+              target="__blank"
+            >
+              here
+            </a>{" "}
+            for the mobile app. Check out the app{" "}
+            <a href="https://passwordprotect.netlify.app/" target="__blank">
+              here
+            </a>
+            !
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function WeatherWizModal({ showModal, closeModal }) {
+  return (
+    <div
+      className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
+      style={{
+        visibility: showModal ? "visible" : "hidden",
+        opacity: showModal ? 1 : 0,
+      }}
+    >
+      <div className="modal-info flex flex-col">
+        <div className="flex flex-row justify-between items-center mb-4">
+          <h4 className="text-left text-lg font-medium">Weather Wizard</h4>
+          <p onClick={closeModal} className="cursor-pointer">
+            &times;
+          </p>
+        </div>
+        <div className="project-info">
+          <p className="font-light text-sm tracking-wide">
+            Weather Wizard is a weather app created using{" "}
+            <a href="https://reactjs.org" target="__blank">
+              React
+            </a>{" "}
+            for the web version and{" "}
+            <a href="https://reactnative.dev" target="__blank">
+              React Native
+            </a>{" "}
+            for the mobile version. It uses the{" "}
+            <a href="https://openweathermap.org/api" target="__blank">
+              OpenWeatherMap API
+            </a>{" "}
+            to retrieve weather data.
+            <br></br>
+            <br></br>
+            You can enter in any city and the app will instantly return the
+            weather data for that city. There's also a Recents page where you
+            can view recent searches. Check out the web version{" "}
+            <a href="https://weatherwizardweb.netlify.app/" target="__blank">
+              here
+            </a>{" "}
+            and the mobile version{" "}
+            <a
+              href="https://expo.dev/@arpanneupane/weather-wizard"
+              target="__blank"
+            >
+              here
+            </a>
+            ! The git repository for the{" "}
+            <a
+              href="https://github.com/arpanneupane19/Weather-Wizard-Web"
+              target="__blank"
+            >
+              web app
+            </a>{" "}
+            and the git repository for the{" "}
+            <a
+              href="https://github.com/arpanneupane19/Weather-Wizard-Mobile"
+              target="__blank"
+            >
+              mobile app
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function SecuroChatModal({ showModal, closeModal }) {
   return (
     <div
@@ -184,70 +317,6 @@ export function SecuroChatModal({ showModal, closeModal }) {
     </div>
   );
 }
-
-export function WeatherWizModal({ showModal, closeModal }) {
-  return (
-    <div
-      className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
-      style={{
-        visibility: showModal ? "visible" : "hidden",
-        opacity: showModal ? 1 : 0,
-      }}
-    >
-      <div className="modal-info flex flex-col">
-        <div className="flex flex-row justify-between items-center mb-4">
-          <h4 className="text-left text-lg font-medium">Weather Wizard</h4>
-          <p onClick={closeModal} className="cursor-pointer">
-            &times;
-          </p>
-        </div>
-        <div className="project-info">
-          <p className="font-light text-sm tracking-wide">
-            Weather Wizard is a weather app created using{" "}
-            <a href="https://reactjs.org" target="__blank">
-              React
-            </a>{" "}
-            for the web version and{" "}
-            <a href="https://reactnative.dev" target="__blank">
-              React Native
-            </a>{" "}
-            for the mobile version. It uses the{" "}
-            <a href="https://openweathermap.org/api" target="__blank">
-              OpenWeatherMap API
-            </a>{" "}
-            to retrieve weather data.
-            <br></br>
-            <br></br>
-            You can enter in any city and the app will instantly return the
-            weather data for that city. There's also a Recents page where you
-            can view recent searches. Check out the web version{" "}
-            <a href="https://weatherwiz.herokuapp.com" target="__blank">
-              here
-            </a>{" "}
-            and the mobile version{" "}
-            <a href="https://expo.dev/@arpanneupane/weather-wizard">here</a>!
-            The git repository for the{" "}
-            <a
-              href="https://github.com/arpanneupane19/Weather-Wizard-Web"
-              target="__blank"
-            >
-              web app
-            </a>{" "}
-            and the git repository for the{" "}
-            <a
-              href="https://github.com/arpanneupane19/Weather-Wizard-Mobile"
-              target="__blank"
-            >
-              mobile app
-            </a>
-            .
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function TodosModal({ showModal, closeModal }) {
   return (
     <div
