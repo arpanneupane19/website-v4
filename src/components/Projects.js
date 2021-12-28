@@ -4,21 +4,21 @@ import { ChangeTitle } from "./Home.js";
 import Bounce from "react-reveal/Bounce";
 import Bloggy from "./images/bloggy.png";
 import Chattr from "./images/chattr.png";
-import SecuroChat from "./images/securochat.png";
-import WeatherWizard from "./images/weatherwiz.png";
+import NodeLink from "./images/nodelink.png";
 import PasswordProtect from "./images/password-protect.png";
+import WeatherWizard from "./images/weatherwiz.png";
+import SecuroChat from "./images/securochat.png";
 import Todos from "./images/todos.png";
 import Website from "./images/website.png";
-import YTClone from "./images/ytclone.png";
 import {
   BloggyModal,
   ChattrModal,
+  NodeLinkModal,
   PasswordProtectModal,
   WeatherWizModal,
   SecuroChatModal,
   TodosModal,
   SiteModal,
-  YTModal,
 } from "./Modal";
 
 function Projects() {
@@ -31,6 +31,10 @@ function Projects() {
   // Chattr hooks
   const [showChattr, setShowChattr] = useState(false);
   const closeChattr = () => setShowChattr(false);
+
+  // NodeLink hooks
+  const [showNodeLink, setShowNodeLink] = useState(false);
+  const closeNodeLink = () => setShowNodeLink(false);
 
   // Password Protect hooks
   const [showPasswordProtect, setShowPasswordProtect] = useState(false);
@@ -52,30 +56,26 @@ function Projects() {
   const [showSite, setShowSite] = useState(false);
   const closeSite = () => setShowSite(false);
 
-  // YT Clone hooks
-  const [showYT, setShowYT] = useState(false);
-  const closeYT = () => setShowYT(false);
-
   return (
     <div className="font-sans antialiased bg-white">
       {showBloggy ||
       showChattr ||
+      showNodeLink ||
       showPasswordProtect ||
       showWeather ||
       showSecuroChat ||
       showTodos ||
-      showSite ||
-      showYT ? (
+      showSite ? (
         <div
           onClick={() =>
             setShowBloggy(false) ||
             setShowChattr(false) ||
+            setShowNodeLink(false) ||
             setShowPasswordProtect(false) ||
             setShowWeather(false) ||
             setShowSecuroChat(false) ||
             setShowTodos(false) ||
-            setShowSite(false) ||
-            setShowYT(false)
+            setShowSite(false)
           }
           className="backdrop"
         ></div>
@@ -120,6 +120,24 @@ function Projects() {
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
                     <p className="font-light text-center">UIkit</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
+                onClick={() => setShowNodeLink(true)}
+              >
+                <p className="text-xl text-center font-light mb-2">NodeLink</p>
+                <img src={NodeLink} alt="NodeLink" />
+                <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">React</p>
+                  </div>
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">Node</p>
+                  </div>
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">Tailwind CSS</p>
                   </div>
                 </div>
               </div>
@@ -219,29 +237,13 @@ function Projects() {
                   </div>
                 </div>
               </div>
-              <div
-                className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-                onClick={() => setShowYT(true)}
-              >
-                <p className="text-xl text-center font-light mb-2">
-                  YouTube Clone
-                </p>
-                <img src={YTClone} alt="YouTube Clone" />
-                <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                  <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">React</p>
-                  </div>
-                  <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">Firebase</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </Bounce>
         </div>
       </div>
       <BloggyModal showModal={showBloggy} closeModal={closeBloggy} />
       <ChattrModal showModal={showChattr} closeModal={closeChattr} />
+      <NodeLinkModal showModal={showNodeLink} closeModal={closeNodeLink} />
       <PasswordProtectModal
         showModal={showPasswordProtect}
         closeModal={closePasswordProtect}
@@ -253,7 +255,6 @@ function Projects() {
       />
       <TodosModal showModal={showTodos} closeModal={closeTodos} />
       <SiteModal showModal={showSite} closeModal={closeSite} />
-      <YTModal showModal={showYT} closeModal={closeYT} />
     </div>
   );
 }
