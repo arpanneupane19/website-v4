@@ -127,6 +127,53 @@ export function ChattrModal({ showModal, closeModal }) {
   );
 }
 
+export function NodeLinkModal({ showModal, closeModal }) {
+  return (
+    <div
+      className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
+      style={{
+        visibility: showModal ? "visible" : "hidden",
+        opacity: showModal ? 1 : 0,
+      }}
+    >
+      <div className="modal-info flex flex-col">
+        <div className="flex flex-row justify-between items-center mb-4">
+          <h4 className="text-left text-lg font-medium">NodeLink</h4>
+          <p onClick={closeModal} className="cursor-pointer">
+            &times;
+          </p>
+        </div>
+        <div className="project-info">
+          <p className="font-light text-sm tracking-wide">
+            NodeLink is an app where users can connect with their audiences
+            using just one link. It uses{" "}
+            <a href="https://expressjs.com/" target="__blank">
+              Express
+            </a>{" "}
+            for the backend and{" "}
+            <a href="https://reactjs.org" target="__blank">
+              React
+            </a>{" "}
+            for the frontend.
+            <br></br>
+            <br></br>
+            Users can register and a site will be created for them, and they can
+            add links to the site to connect their audiences. Users can also
+            customize their site. Check out the git repository{" "}
+            <a
+              href="https://github.com/arpanneupane19/NodeLink"
+              target="__blank"
+            >
+              here
+            </a>{" "}
+            and the app <a href="https://nodelinkapp.herokuapp.com">here</a>!
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function PasswordProtectModal({ showModal, closeModal }) {
   return (
     <div
@@ -405,59 +452,6 @@ export function SiteModal({ showModal, closeModal }) {
             <a href="mailto:arpanneupane19@gmail.com" target="__blank">
               Feel free to leave any feedback!
             </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function YTModal({ showModal, closeModal }) {
-  return (
-    <div
-      className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
-      style={{
-        visibility: showModal ? "visible" : "hidden",
-        opacity: showModal ? 1 : 0,
-      }}
-    >
-      <div className="modal-info flex flex-col">
-        <div className="flex flex-row justify-between items-center mb-4">
-          <h4 className="text-left text-lg font-medium">YouTube Clone</h4>
-          <p onClick={closeModal} className="cursor-pointer">
-            &times;
-          </p>
-        </div>
-        <div className="project-info">
-          <p className="font-light text-sm tracking-wide">
-            This is a YouTube frontend clone. It looks similar to what you would
-            see on the YouTube home page. I did this project to expand my skills
-            with{" "}
-            <a href="https://reactjs.org" target="__blank">
-              React
-            </a>
-            .<br></br>
-            <br></br>
-            This was created using{" "}
-            <a href="https://reactjs.org" target="__blank">
-              React
-            </a>{" "}
-            and was deployed to{" "}
-            <a href="https://firebase.google.com/" target="__blank">
-              Firebase
-            </a>{" "}
-            for hosting. Check out the git repository{" "}
-            <a
-              href="https://github.com/arpanneupane19/youtube-clone"
-              target="__blank"
-            >
-              here
-            </a>{" "}
-            and the app{" "}
-            <a href="https://clone-46a97.firebaseapp.com/" target="__blank">
-              here
-            </a>
-            !
           </p>
         </div>
       </div>
