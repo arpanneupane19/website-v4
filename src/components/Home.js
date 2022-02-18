@@ -29,7 +29,6 @@ function Home() {
     "web development.",
     "content creation.",
     "business.",
-    "creating things.",
   ];
 
   return (
@@ -205,7 +204,7 @@ function Home() {
       </section>
       <div className="ending-msg font-light text-center p-6 absolute bottom-0 left-0 right-0 flex flex-col">
         <p>Created with ❤️ by Arpan Neupane.</p>
-        <p>© 2021 Arpan Neupane. All rights reserved.</p>
+        <p>© 2022 Arpan Neupane. All rights reserved.</p>
       </div>
     </div>
   );
