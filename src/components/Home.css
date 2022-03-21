@@ -15,8 +15,8 @@ html {
 }
 
 .proficient {
-  border: 2px solid rgb(32, 229, 132);
-  background-color: #4decbc15;
+  border: 2px solid rgb(0, 140, 255);
+  background-color: #4dacec15;
 }
 
 .intermediate {
@@ -30,6 +30,7 @@ html {
 }
 
 .ending-msg {
-  background-color: rgb(32, 229, 132);
+  background-color: rgb(0, 140, 255);
+  color: #fff;
   width: 100%;
 }
