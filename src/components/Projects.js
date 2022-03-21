@@ -82,7 +82,7 @@ function Projects() {
       ) : null}
       <div className="projects">
         <div className="flex flex-col justify-center items-center pt-36 pb-24 lg:px-16 px-6">
-          <Bounce bottom cascade>
+          <Bounce cascade>
             <p className="projects-header md:text-3xl text-2xl mb-4 font-medium">
               Projects
             </p>
@@ -141,23 +141,24 @@ function Projects() {
                   </div>
                 </div>
               </div>
+
               <div
                 className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-                onClick={() => setShowPasswordProtect(true)}
+                onClick={() => setShowSecuroChat(true)}
               >
                 <p className="text-xl text-center font-light mb-2">
-                  Password Protect
+                  SecuroChat
                 </p>
-                <img src={PasswordProtect} alt="Password Protect" />
+                <img src={SecuroChat} alt="SecuroChat" />
                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                   <div className="tool p-1 rounded-lg m-0.5">
                     <p className="font-light text-center">React</p>
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">React Native</p>
+                    <p className="font-light text-center">Node</p>
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">Expo</p>
+                    <p className="font-light text-center">Socket.io</p>
                   </div>
                 </div>
               </div>
@@ -184,21 +185,38 @@ function Projects() {
               </div>
               <div
                 className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-                onClick={() => setShowSecuroChat(true)}
+                onClick={() => setShowPasswordProtect(true)}
               >
                 <p className="text-xl text-center font-light mb-2">
-                  SecuroChat
+                  Password Protect
                 </p>
-                <img src={SecuroChat} alt="SecuroChat" />
+                <img src={PasswordProtect} alt="Password Protect" />
                 <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                   <div className="tool p-1 rounded-lg m-0.5">
                     <p className="font-light text-center">React</p>
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">Node</p>
+                    <p className="font-light text-center">React Native</p>
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">Socket.io</p>
+                    <p className="font-light text-center">Expo</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
+                onClick={() => setShowSite(true)}
+              >
+                <p className="text-xl text-center font-light mb-2">
+                  This Website
+                </p>
+                <img src={Website} alt="Website" />
+                <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">React</p>
+                  </div>
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">Tailwind CSS</p>
                   </div>
                 </div>
               </div>
@@ -217,23 +235,6 @@ function Projects() {
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
                     <p className="font-light text-center">PostgreSQL</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-                onClick={() => setShowSite(true)}
-              >
-                <p className="text-xl text-center font-light mb-2">
-                  This Website
-                </p>
-                <img src={Website} alt="Website" />
-                <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                  <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">React</p>
-                  </div>
-                  <div className="tool p-1 rounded-lg m-0.5">
-                    <p className="font-light text-center">Tailwind CSS</p>
                   </div>
                 </div>
               </div>
