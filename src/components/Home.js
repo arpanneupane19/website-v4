@@ -1,5 +1,5 @@
 import React from "react";
-import homeGif from "./images/home-gif.gif";
+import homeImg from "./images/home-image.png";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import Bounce from "react-reveal/Bounce";
@@ -52,7 +52,7 @@ function Home() {
             </div>
           </Bounce>
           <div className="gif">
-            <img src={homeGif} alt="programmer-gif" width="500" />
+            <img src={homeImg} alt="programmer-gif" width="500" />
           </div>
         </div>
       </section>
