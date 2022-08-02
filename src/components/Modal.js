@@ -127,6 +127,54 @@ export function ChattrModal({ showModal, closeModal }) {
   );
 }
 
+
+export function PodMasterModal({ showModal, closeModal }) {
+  return (
+    <div
+      className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
+      style={{
+        visibility: showModal ? "visible" : "hidden",
+        opacity: showModal ? 1 : 0,
+      }}
+    >
+      <div className="modal-info flex flex-col">
+        <div className="flex flex-row justify-between items-center mb-4">
+          <h4 className="text-left text-lg font-medium">PodMaster</h4>
+          <p onClick={closeModal} className="cursor-pointer">
+            &times;
+          </p>
+        </div>
+        <div className="project-info">
+          <p className="font-light text-sm tracking-wide">
+            PodMaster is a podcast uploading platform. It can be used to upload and promote podcasts! It was created using{" "}
+            <a href="https://python.org" target="__blank">
+              Python
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://flask.palletsprojects.com/en/2.0.x/"
+              target="__blank"
+            >
+              Flask
+            </a>{" "}
+            for the backend and{" "}
+            <a href="https://reactjs.org" target="__blank">
+              React
+            </a>{" "}
+            for the frontend.
+            <br></br>
+            <br></br>
+            Users can login/register, create podcasts, follow other users, as well as like and comment on podcasts! Check out the git repository{" "}
+            <a href="https://github.com/arpanneupane19/PodMaster" target="__blank">
+              here
+            </a>!
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function NodeLinkModal({ showModal, closeModal }) {
   return (
     <div
