@@ -4,6 +4,7 @@ import { ChangeTitle } from "./Home.js";
 import Bounce from "react-reveal/Bounce";
 import Bloggy from "./images/bloggy.png";
 import Chattr from "./images/chattr.png";
+import PodMaster from "./images/podmaster.png";
 import NodeLink from "./images/nodelink.png";
 import PasswordProtect from "./images/password-protect.png";
 import WeatherWizard from "./images/weatherwiz.png";
@@ -13,6 +14,7 @@ import Website from "./images/website.png";
 import {
   BloggyModal,
   ChattrModal,
+  PodMasterModal,
   NodeLinkModal,
   PasswordProtectModal,
   WeatherWizModal,
@@ -31,6 +33,10 @@ function Projects() {
   // Chattr hooks
   const [showChattr, setShowChattr] = useState(false);
   const closeChattr = () => setShowChattr(false);
+
+  // PodMaster hooks
+  const [showPodMaster, setShowPodMaster] = useState(false);
+  const closePodMaster = () => setShowPodMaster(false);
 
   // NodeLink hooks
   const [showNodeLink, setShowNodeLink] = useState(false);
@@ -59,17 +65,19 @@ function Projects() {
   return (
     <div className="font-sans antialiased bg-white">
       {showBloggy ||
-      showChattr ||
-      showNodeLink ||
-      showPasswordProtect ||
-      showWeather ||
-      showSecuroChat ||
-      showTodos ||
-      showSite ? (
+        showChattr ||
+        showPodMaster ||
+        showNodeLink ||
+        showPasswordProtect ||
+        showWeather ||
+        showSecuroChat ||
+        showTodos ||
+        showSite ? (
         <div
           onClick={() =>
             setShowBloggy(false) ||
             setShowChattr(false) ||
+            setShowPodMaster(false) ||
             setShowNodeLink(false) ||
             setShowPasswordProtect(false) ||
             setShowWeather(false) ||
@@ -120,6 +128,24 @@ function Projects() {
                   </div>
                   <div className="tool p-1 rounded-lg m-0.5">
                     <p className="font-light text-center">UIkit</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
+                onClick={() => setShowPodMaster(true)}
+              >
+                <p className="text-xl text-center font-light mb-2">PodMaster</p>
+                <img src={PodMaster} alt="PodMaster" />
+                <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">Python</p>
+                  </div>
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">React</p>
+                  </div>
+                  <div className="tool p-1 rounded-lg m-0.5">
+                    <p className="font-light text-center">Tailwind CSS</p>
                   </div>
                 </div>
               </div>
@@ -244,6 +270,7 @@ function Projects() {
       </div>
       <BloggyModal showModal={showBloggy} closeModal={closeBloggy} />
       <ChattrModal showModal={showChattr} closeModal={closeChattr} />
+      <PodMasterModal showModal={showPodMaster} closeModal={closePodMaster} />
       <NodeLinkModal showModal={showNodeLink} closeModal={closeNodeLink} />
       <PasswordProtectModal
         showModal={showPasswordProtect}
