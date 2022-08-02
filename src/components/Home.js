@@ -1,5 +1,5 @@
 import React from "react";
-import homeImg from "./images/home-image.png";
+import homeImg from "./images/home-image.gif";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import Bounce from "react-reveal/Bounce";
