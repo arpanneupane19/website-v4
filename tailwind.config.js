@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     textColor: (theme) => theme("colors"),
     textColor: {
-      "first-light": "#008cff",
+      "first-light": "#20e584",
       "last-light": "#4d4d4d",
       "nav-link-light": "#4d4d4d",
       "nav-link-light-hover": "#141414",
