@@ -79,9 +79,8 @@ function Home() {
                 >
                   YouTube
                 </a>
-                . I make tutorials, best practices, and also give advice on how
-                to use tools better. I'm also a contributor at{" "}
-                <a href="https://themorningnews.com" target="__blank">
+                . I also have a passion for music and love to play the guitar (both finger-style and strumming). I'm also an author at{" "}
+                <a href="https://themorningnews.com/news/author/arpanneupane/" target="__blank">
                   TheMorningNews
                 </a>
                 .
