@@ -23,10 +23,14 @@ export function ChangeTitle() {
 function Home() {
   ChangeTitle();
   const [age, setAge] = useState(0)
+  const [copyright, setCopyright] = useState('')
 
   useEffect(() => {
     const miliseconds = new Date() - new Date('11/03/2007')
     setAge(Math.floor(miliseconds / 1000 / 60 / 60 / 24 / 365))
+
+    const year = new Date().getFullYear()
+    setCopyright(year)
   }, [])
 
   // Strings for typewriter effect
@@ -209,7 +213,7 @@ function Home() {
       </section>
       <div className="ending-msg font-light text-center p-6 absolute bottom-0 left-0 right-0 flex flex-col">
         <p>Created with ❤️ by Arpan Neupane.</p>
-        <p>© 2022 Arpan Neupane. All rights reserved.</p>
+        <p>© {copyright} Arpan Neupane. All rights reserved.</p>
       </div>
     </div>
   );
