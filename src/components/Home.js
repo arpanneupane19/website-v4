@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import homeImg from "./images/home-image.gif";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
@@ -22,6 +22,12 @@ export function ChangeTitle() {
 
 function Home() {
   ChangeTitle();
+  const [age, setAge] = useState(0)
+
+  useEffect(() => {
+    const miliseconds = new Date() - new Date('11/03/2007')
+    setAge(Math.floor(miliseconds / 1000 / 60 / 60 / 24 / 365))
+  }, [])
 
   // Strings for typewriter effect
   const strings = [
@@ -65,7 +71,7 @@ function Home() {
                 About Me
               </p>
               <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-                Hello there! My name is Arpan Neupane and I am a 14-year-old
+                Hello there! My name is Arpan Neupane and I am a {age}-year-old
                 programmer. I enjoy creating apps and websites that can help
                 people, make life easier, and make it fun.{" "}
               </p>
