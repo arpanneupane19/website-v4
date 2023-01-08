@@ -49,7 +49,7 @@ function Contact() {
 
             <Tooltip title="Twitter">
               <div className="contact-item twitter my-2 mx-2 text-3xl">
-                <a href="https://twitter.com/arpanneupane07" target="__blank">
+                <a href="https://twitter.com/arpanneup" target="__blank">
                   <AiFillTwitterCircle />
                 </a>
               </div>
