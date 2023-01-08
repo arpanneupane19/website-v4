@@ -36,7 +36,7 @@ function Home() {
   // Strings for typewriter effect
   const strings = [
     "software development.",
-    "web development.",
+    "music.",
     "content creation.",
     "business.",
   ];
@@ -76,12 +76,11 @@ function Home() {
               </p>
               <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
                 Hello there! My name is Arpan Neupane and I am a {age}-year-old
-                programmer. I enjoy creating apps and websites that can help
-                people, make life easier, and make it fun.{" "}
+                programmer. I enjoy creating apps and websites that can express my creativity and to build meaningful products.{" "}
               </p>
               <br></br>
               <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-                In my free time, I create content surrounding technology and
+                During my free time, I create content surrounding technology and
                 programming on{" "}
                 <a
                   href="https://youtube.com/c/ArpanNeupaneProductions"
@@ -89,7 +88,7 @@ function Home() {
                 >
                   YouTube
                 </a>
-                . I also have a passion for music and love to play the guitar (both finger-style and strumming). I'm also an author at{" "}
+                . When I'm not programming or making content, you can find me playing the guitar, spending time with people, cooking, or reading. I'm also an author at{" "}
                 <a href="https://themorningnews.com/news/author/arpanneupane/" target="__blank">
                   TheMorningNews
                 </a>
@@ -97,9 +96,9 @@ function Home() {
               </p>
               <br></br>
               <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-                I'm always looking forward to learning new things and improving
-                my applications in any way possible. If you want to contact me,
-                please feel free to email me at{" "}
+                I'm always looking forward to learning new technologies and improving
+                my work in any way possible. If you want to contact me regarding any of my products, any ideas, or just want to chat,
+                you're welcome to email me at{" "}
                 <a href="mailto:arpanneupane19@gmail.com" target="__blank">
                   arpanneupane19@gmail.com
                 </a>
@@ -132,7 +131,17 @@ function Home() {
                   {/* INTERMEDIATE ROW */}
                   <div className="intermediate-row flex flex-wrap mb-1">
                     <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
+                      <p className="text-base">TypeScript</p>
+                    </div>
+                    <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                       <p className="text-base">SQL</p>
+                    </div>
+                  </div>
+
+                  {/* BEGINNER ROW */}
+                  <div className="beginner-row flex flex-wrap">
+                    <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
+                      <p className="text-base">Java</p>
                     </div>
                   </div>
                 </div>
@@ -143,16 +152,19 @@ function Home() {
                   {/* PROFICIENT ROW */}
                   <div className="proficient-row flex flex-wrap mb-1">
                     <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                      <p className="text-base">Flask</p>
-                    </div>
-                    <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
                       <p className="text-base">React</p>
                     </div>
                     <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                      <p className="text-base">UIkit</p>
+                      <p className="text-base">Flask</p>
                     </div>
                     <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                      <p className="text-base">Pygame</p>
+                      <p className="text-base">Node</p>
+                    </div>
+                    <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
+                      <p className="text-base">Tailwind</p>
+                    </div>
+                    <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
+                      <p className="text-base">UIkit</p>
                     </div>
                   </div>
 
@@ -162,18 +174,12 @@ function Home() {
                       <p className="text-base">React Native</p>
                     </div>
                     <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
-                      <p className="text-base">Tailwind</p>
-                    </div>
-                    <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
-                      <p className="text-base">Node</p>
+                      <p className="text-base">Chakra UI</p>
                     </div>
                   </div>
 
                   {/* BEGINNER ROW */}
                   <div className="beginner-row flex flex-wrap">
-                    <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
-                      <p className="text-base">Tkinter</p>
-                    </div>
                   </div>
                 </div>
 
@@ -201,17 +207,26 @@ function Home() {
                     <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                       <p className="text-base">Figma</p>
                     </div>
+
                     <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
+                      <p className="text-base">Autodesk Fusion 360</p>
+                    </div>
+                  </div>
+
+                  {/* BEGINNER ROW */}
+                  <div className="beginner-row flex flex-wrap">
+                    <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
                       <p className="text-base">Xcode</p>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </Fade>
         </div>
       </section>
-      <div className="ending-msg font-light text-center p-6 absolute bottom-0 left-0 right-0 flex flex-col">
+      <div className="ending-msg font-light text-center absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center">
         <p>Created with ❤️ by Arpan Neupane.</p>
         <p>© {copyright} Arpan Neupane. All rights reserved.</p>
       </div>
