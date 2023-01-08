@@ -30,6 +30,7 @@ html {
 }
 
 .ending-msg {
+  height: 75px;
   background-color: #20e584;
   color: #000;
   width: 100%;
